@@ -1,4 +1,4 @@
-package com.personal.foodPanda.model;
+package com.personal.foodPanda.model.foodoutlet;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -10,16 +10,16 @@ import java.util.List;
 @Getter
 public class FoodOutletCatalog {
     private List<FoodOutlet> foodOutletList;
-    private static FoodOutletCatalog ourInstance ;
+    private static FoodOutletCatalog foodOutletCatalog ;
 
     public static void initializeInstance(List<FoodOutlet> foodOutletList) {
-        if(ourInstance==null){
-            ourInstance=new FoodOutletCatalog(foodOutletList);
+        if(foodOutletCatalog==null){
+            foodOutletCatalog=new FoodOutletCatalog(foodOutletList);
         }
     }
 
     public static FoodOutletCatalog getInstance() {
-        return ourInstance;
+        return foodOutletCatalog;
     }
 
     private FoodOutletCatalog() {

@@ -1,4 +1,4 @@
-package com.personal.foodPanda.model;
+package com.personal.foodPanda.model.fooditem;
 
 public class FoodItem {
     String name;
