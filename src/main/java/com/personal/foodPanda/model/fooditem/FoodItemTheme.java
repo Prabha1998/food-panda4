@@ -1,5 +1,5 @@
 package com.personal.foodPanda.model.fooditem;
 
-public enum Theme {
+public enum FoodItemTheme {
     CHINESE,INDIAN,CONTINENTAL,ITALIAN;
 }

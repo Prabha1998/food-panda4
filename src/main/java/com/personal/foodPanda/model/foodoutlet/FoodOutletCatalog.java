@@ -22,8 +22,10 @@ public class FoodOutletCatalog {
         return foodOutletCatalog;
     }
 
-    private FoodOutletCatalog() {
+    private FoodOutletCatalog(List<FoodOutlet> foodOutletList) {
+        this.foodOutletList=foodOutletList;
     }
+
 
     public List<FoodOutlet> getList(){
         return Collections.unmodifiableList(foodOutletList);
